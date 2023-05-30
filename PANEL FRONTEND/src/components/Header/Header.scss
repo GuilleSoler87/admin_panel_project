@@ -1,0 +1,74 @@
+@import "./src/colors.scss";
+
+.header-container {
+  width: 100%;
+  height: 70px;
+  background-color: $green;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 999;
+}
+
+.header-title {
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  color: $ultra-white;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  margin-left: 1rem;
+
+  .img-h {
+    margin-top: 0.5rem;
+  }
+}
+
+.input-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+    input{
+        width: 600px;
+    }
+}
+
+.header-title {
+  margin: 0;
+  font-size: 48px;
+  color: $ultra-white;
+  margin-left: 10px;
+  margin-bottom: 15px;
+  margin-top: 10px;
+}
+
+.navigation {
+  display: flex;
+}
+
+.navigation li {
+  margin-right: 50px;
+}
+
+.acerca {
+  color: $black;
+}
+
+.circle-profile {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: $gray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: $gray;
+  margin-top: 5px;
+}

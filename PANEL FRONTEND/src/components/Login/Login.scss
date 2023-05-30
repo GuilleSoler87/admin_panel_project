@@ -1,0 +1,66 @@
+@import "./src/colors.scss";
+
+.login-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: $blue-feending;
+  width: 100vw;
+
+  .login-word{
+    color: $green;
+    font-size: 5rem;
+  }
+
+  .title-login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img{
+      width: 40px;
+      height: auto;
+  }
+  }
+
+}
+
+
+.formLogin{
+  margin-top: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 400px;
+  padding-bottom: 100px;
+
+  hr{
+    border: 1px solid $green;
+    margin-bottom: 1.8rem;
+}
+
+.input-style{
+  text-align: center;
+  font-size: 18px;
+  width: 400px;
+}
+.input-style:focus{
+  border: 2px solid $green;
+}
+
+.btn-login{
+  width: 200px;
+  background-color: transparent;
+  border: 1px solid $green;
+  color: $green;
+  transition: background-color 0.3s ease-out, color 0.3s ease-out;
+}
+.btn-login:hover{
+  background-color: $green;
+  color: $white;
+}
+}

@@ -1,0 +1,75 @@
+@import "./src/colors.scss";
+
+.formContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: $blue-feending;
+    width: 100vw;
+
+    .register{
+        color: $green;
+        font-size: 5rem;
+    }
+    .title{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img{
+            width: 40px;
+            height: auto;
+        }
+    }
+}
+
+.formRegister{
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 400px;
+
+    hr{
+        border: 1px solid $green;
+        margin-bottom: 1rem;
+    }
+
+    .container-btn-r{
+        margin-top: 1rem;
+        display: flex;
+        justify-content: center;
+        .btn-register{
+            width: 200px;
+            background-color: transparent;
+            border: 1px solid $green;
+            color: $green;
+            transition: background-color 0.3s ease-out, color 0.3s ease-out;
+        }
+        .btn-register:hover{
+            background-color: $green;
+            color: $white;
+        }
+    }
+
+    input{
+        text-align: center;
+        font-size: 18px;
+    }
+    input:focus{
+        border: 2px solid $green;
+    }
+
+    .select-files{
+        display: flex;
+        justify-content: center;
+        color: $white;
+        margin-top: 1rem;
+
+        .inputFiles:focus{
+            border: none;
+        }
+    }
+}
+

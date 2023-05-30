@@ -1,0 +1,262 @@
+@import "../colors.scss";
+
+
+//Desktop buttons
+
+//Bases
+%basic {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 14px 8px; //Not the same for all???
+    backdrop-filter: blur(16px);
+
+
+    span {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 0px;
+        gap: 6px;
+
+    }
+
+    //Svg refers to the icon
+    svg {
+        font-size: 1.5em;
+    }
+
+
+}
+
+//SIZE
+
+
+
+%md {
+    // position: absolute;
+    width: 155.5px;
+
+
+}
+
+%lg {
+    // position: absolute;
+    width: 210px !important;
+
+}
+
+%lg1 {
+    // position: absolute;
+    width: 150px !important;
+
+}
+
+//SPAN for icon and text
+
+%text-icon-div {
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+
+%btn-green {
+    @extend %basic;
+    color: $green;
+    border-color: $green;
+    background-color: transparent;
+    font-size: 14px;
+    width: 140px;
+
+    &:hover {
+        color: $green10;
+        border-color: $green10;
+
+    }
+
+    &:active {
+        background-color: $green;
+        color: $ultra-white
+    }
+
+    &:disabled {
+        border-color: $white-gray; //Figma says one shade away from defined colors, using defined instead
+    }
+
+}
+
+
+%btn-gray {
+    @extend %basic;
+    color: $gray;
+    background-color: $white;
+    border-color: $gray-white;
+
+    &:hover {
+        background-color: $white-gray;
+
+    }
+
+    &:active {
+        background-color: $gray;
+        color: $white-gray;
+    }
+
+}
+
+
+
+//THESE ARE THE CLASSES TO USE IN JSX TAGS!
+
+.btn-green-md {
+    @extend %btn-green;
+    @extend %md;
+}
+
+.btn-green-lg {
+    @extend %btn-green;
+    @extend %lg;
+}
+
+.btn-green-lg1 {
+    @extend %btn-green;
+    @extend %lg1;
+}
+
+.btn-green-sm {
+    @extend %btn-green;
+    width: 130px;
+}
+
+
+.btn-gray-md {
+    @extend %btn-gray;
+    @extend %md;
+}
+
+
+.btn-location {
+    @extend %btn-gray;
+    gap: 13px;
+    width: 179px;
+}
+
+.btn-time {
+    @extend %btn-gray;
+    width: 144px;
+}
+
+.btn-AssCategory {
+    @extend %btn-gray;
+    width: 120px;
+}
+
+.btn-add-activity {
+    @extend %btn-green;
+    background-color: inherit;
+    width: 145px;
+    font-size: 11px;
+}
+
+//For programación form
+%btn-tab {
+    @extend %basic;
+    color: $ultra-white;
+    background-color: $gray-white;
+    border-color: $gray-white;
+    border-radius: 10px 10px 0px 0px;
+
+    &:hover {
+        color: $gray;
+
+    }
+
+    &:active {
+        background-color: $gray;
+        color: $white;
+    }
+
+}
+
+
+.btn-tab-day {
+    @extend %btn-tab;
+    width: 239px;
+    height: 30px;
+}
+
+.btn-tab-day-selected {
+    @extend %basic;
+    width: 239px;
+    height: 30px;
+    color: black;
+    background-color: $white-gray;
+    border-color: $white-gray;
+    border-radius: 10px 10px 0px 0px;
+
+}
+
+.btn-tab-plus {
+    @extend %btn-tab;
+    width: 49px;
+    height: 30px;
+
+}
+
+
+
+
+//SWICH FOR NOTIFICATIONS
+.switch-button {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 24px;
+    background-color: #fff;
+    border-radius: 17px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    border: 0.857506px solid #DBDBDB;
+    margin-top: 10px;
+
+}
+
+.switch-button .switch-slider {
+    position: absolute;
+    top: 0.8px;
+    
+    left: 0px;
+    width: 21px;
+    height: 21px;
+    background-color: $greenSwich;
+    border-radius: 50%;
+    transition: transform 0.3s ease-in-out;
+}
+
+.switch-button.on {
+    background-color: #FFFF;
+
+}
+
+.switch-button.on .switch-slider {
+    transform: translateX(26px);
+}
+
+.switch-button.off {
+    background-color: #fff;
+
+}
+
+.switch-button.off .switch-slider {
+    background-color: #ccc;
+    transform: translateX(2px);
+}
+
+.gray{
+    span{
+        color: $gray-white;
+    }
+}

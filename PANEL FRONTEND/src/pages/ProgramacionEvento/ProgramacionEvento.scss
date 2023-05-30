@@ -1,0 +1,139 @@
+@import "../../colors.scss";
+@import "../../sass/buttons.scss";
+
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+
+
+.main-background {
+width: 90%;
+height: 120%;
+border-radius: 10px;
+margin-left: 5%;
+margin-right: 5%;
+margin-top: 35px;
+background-color: $white-l-gray;
+padding: 2% 2%;
+}
+
+
+
+.activity-form {
+display: flex;
+flex-direction: column;
+align-content: flex-start;
+align-items:flex-start;
+width: 98%;
+height: 76%;
+overflow-y: scroll;
+// // overflow-x: none;
+background-color: $white-gray;
+padding: 1%;
+border-radius: 0px 10px 10px 10px;
+}
+
+.tab {
+  display:flex;
+  gap: 4px;
+
+
+}
+
+
+
+.inputs-div {
+display: flex;
+flex-direction: row;
+justify-content:space-between;
+align-items: center;
+width: 95%;
+gap: 43px;
+padding: 2%;
+border-bottom: 1px solid $white;
+
+
+
+input[type="text"], .activity-text {
+flex-grow:1;
+}
+}
+
+.title {
+  padding-bottom: 0;
+}
+
+.activity-icons {
+width: 68px;
+height: 28px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 3;
+flex-grow: 0;
+}
+
+//THIS IS THE SAME FOR ALL FORMS, PUT IN PARENT FOLDER??
+
+.clock-text {
+  width: 160px;
+}
+
+.addbutton-div{
+  align-self: end;
+  padding: 2%;
+
+}
+
+.savebutton-div {
+  // width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 10px;
+}
+
+.nextbutton-div {
+  width: 90%;
+  display: flex;
+  justify-content: flex-end;
+  padding: 2%;
+  margin-top: 1%;
+ 
+}
+
+
+.next-recinto-container{
+  display: flex;
+  gap: 2rem;
+  justify-content: flex-end;
+  margin-right: 5%;
+  align-items: center;
+  margin-top: 1.5rem;
+  margin-bottom: 2rem;
+
+      .steps{
+          text-transform: uppercase;
+          font-size: 14px;
+          font-weight: 500;
+      }
+      .points{
+          letter-spacing: 6px;
+          font-size: 13px;
+          color: $gray;
+
+          span {
+            color: transparent;
+            border: 1px solid $gray;
+          }
+
+      }
+      .btns{
+          display: flex;
+          gap: 1rem;
+      }
+}

@@ -1,0 +1,103 @@
+@import "../../colors.scss";
+@import "../../sass/buttons.scss";
+
+
+.event-form{
+    width: 90%;
+height: 120%;
+border-radius: 10px;
+margin-left: 5%;
+margin-right: 5%;
+margin-top: 35px;
+margin-bottom: 50px;
+background-color: $white-l-gray;
+padding: 2% 2%;
+font-size: 15px;
+}
+
+
+.event-group{
+label {
+    display: block;
+    margin-bottom: 1px;
+    font-weight: bold;
+  }
+
+  input[type="text"] {
+    width: 500px;
+    height: 30px;
+  }
+
+  textarea {
+    width: 550px;
+    height: 150px;
+    padding: 5px;
+  }
+}
+
+.parallel-groups{
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  
+}
+
+
+.event-location, .location-input {
+  display:flex;
+  gap: 2%;
+}
+
+.save {
+  display: flex;
+ justify-content: flex-end;
+}
+
+.datetime-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 5%;
+    // display: grid;
+    // grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    // flex-direction: column;
+
+    .input-time {
+        border: 1px solid $gray;
+        padding: 1px;
+        width: 120px;
+        height: 40px;
+      }
+ 
+  }
+
+  
+
+
+  .next-recinto-container{
+    display: flex;
+    gap: 2rem;
+    justify-content: flex-end;
+    margin-right: 5%;
+    align-items: center;
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+
+        .steps{
+            text-transform: uppercase;
+            font-size: 14px;
+            font-weight: 500;
+        }
+        .points{
+            letter-spacing: 6px;
+            font-size: 13px;
+            color: $gray;
+
+        }
+        .btns{
+            display: flex;
+            gap: 1rem;
+        }
+}
+  

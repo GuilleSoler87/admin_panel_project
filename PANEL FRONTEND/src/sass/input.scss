@@ -1,0 +1,78 @@
+@import "../colors.scss";
+
+input {
+    padding: 0 1%;
+}
+
+  //This controls the invisible date symbol that onclick opens the calendar
+  input[type="date"]::-webkit-calendar-picker-indicator {
+    background:none;
+    position: absolute;
+    height: 80%;
+    right: 10px;
+    width:140px;
+  }
+
+  input[type="time"]::-webkit-calendar-picker-indicator  {
+    background:none;
+    position: absolute;
+    height: 80%;
+    right: 10px;
+    width:110px;
+  }
+  
+%input-date-and-time {
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+    height: 42px;
+    color:  $gray;
+    background-color: $white;
+    border: 1px solid $gray-white;
+    border-radius: 8px;
+    position: relative;
+    
+    &:hover{  
+        background-color: $white-gray;
+        
+    }
+    
+    &:active {
+        background-color: $gray;
+        color: $white-gray;
+}
+
+input{
+    color: $gray;
+    background-color: inherit;
+    font-family: 'SF Pro Display', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    text-align: center;
+    letter-spacing: 0.41px;
+   
+}
+
+svg {
+    font-size: 1.5em;
+}
+}
+
+//Classes to use with span for input date and input time
+
+.input-date {
+    @extend %input-date-and-time;
+    width: 179px;
+    input {
+        width: 110px; 
+    }   
+}
+
+.input-time {
+    @extend %input-date-and-time;
+    width: 145px; 
+    input {
+            width: 70px; 
+        }  
+}

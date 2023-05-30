@@ -1,0 +1,116 @@
+.asistente-main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  height: 90%;
+  margin: 5%;
+
+  /* Neutral Color/White Light Gray */
+  background: #EFEFEF;
+  border-radius: 10px;
+}
+
+.asistente-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  height: 90%;
+
+  /* Neutral Color/White */
+  background: #EFEFEF;
+  border-radius: 10px;
+}
+
+.asistente-raya {
+  width: 90%;
+  height: 91px;
+  background: linear-gradient(180deg, rgba(0, 194, 162, 0.48) 0%, rgba(0, 194, 162, 0.32) 100%), url(../../assets/RAYA.png);
+  border-radius: 10px 10px 0px 0px;
+}
+
+.asistente-info-container {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 19px;
+  gap: 10px;
+  width: 90%;
+  height: 90%;
+  background-color: #F9F9F9;
+
+  /* Green 50 */
+  border: 1px solid #51CFBA;
+  border-radius: 10px;
+}
+
+.asistente-info {
+  display: flex;
+  flex-direction: row; // Changed here
+  align-items: flex-start;
+  padding: 0px;
+  gap: 7px;
+  width: 90%;
+  height: 90%;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.image-container {
+  display: flex;
+  justify-content: flex-start; // Changed here
+  width: auto;
+  height: 70px;
+}
+
+.image {
+  display: flex;
+  /* Neutral Color/White */
+  border: 6px solid #F9F9F9;
+  border-radius: 128.643px;
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  height: 90%;
+  background: #F9F9F9;
+}
+
+.name {
+  /* Large title 34 */
+  font-family: 'SF Pro Display';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 41px;
+  /* identical to box height, or 121% */
+  letter-spacing: 0.41px;
+  /* Neutral Color/Black */
+  color: #02030E;
+}
+
+.puesto-empleo {
+  display: flex;
+  align-items: flex-start;
+  width: 423.85px;
+  height: 20px;
+
+  /* body 15 semibold */
+  font-family: 'SF Pro Text';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 20px;
+  /* identical to box height, or 133% */
+  letter-spacing: -0.24px;
+  /* Neutral Color/Black */
+  color: #02030E;
+}
